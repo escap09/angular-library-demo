@@ -6,7 +6,7 @@ This `my-lib` libraray is created by angular CLI `ng g library <lib-name>` comma
 
 It is using [dherges/ng-packagr](https://github.com/dherges/ng-packagr) internally for maintaining and creating the library and hiding its complexity and doing most of the work just by CLI command.
 
-app from `libraray-demo` project is using `<ml-my-lib>` component and `MyLibService` from `my-lib` library project. It's also exporting `MyLibModule` which is making both of the component and service available in app project.
+app from `libraray-demo` project is using `<ml-my-lib>` component and `MyLibService` from `my-lib` library project. It is importing `MyLibModule` which is making both of the component and service available in app project.
 
 ``` typescript 
 import { MyLibModule } from 'my-lib';
