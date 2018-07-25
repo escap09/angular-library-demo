@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run build:lib && ng serve",
+    "build": "npm run build:lib && npm run build:app",
+    "build:lib": "ng build my-lib",
+    "build:app": "ng build library-demo",
     "test:app": "ng test library-demo",
     "test:lib": "ng test my-lib",
     "test": "ng test",
